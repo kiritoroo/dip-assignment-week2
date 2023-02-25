@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  background: #ddd;
+  width: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #404040;
+  border: 5px solid #ddd;
+}
+
+body {
+  line-height: 1em;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  --bg0: #eee;
+  --bg1: #f0f0f0;
+  --bg2: #f3f3f3;
+  --bg3: #f8f8f8;
+  --bg4: #fafafa;
+  --bg5: 255, 255, 255;
+  --darken: 0, 0, 0;
+  --border: #ddd;
+  --txt1: #666;
+  --txt2: #888;
+  --font1: "poppins", sans-serif;
+  --font2: "DM Serif Display", serif;
+  --accent1: #9d7e9e;
+}
